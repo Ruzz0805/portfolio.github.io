@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Lloyd Ruzzelle</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Lloyd Ruzzelle</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/pic.jpg" alt="Lloyd Ruzzelle profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Lloyd Ruzzelle</h1>
+        <h3 class="typing-text">I'm a <span></span></h3>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://linkedin.com/in/ruzzelle'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/Ruzz0805'"
+          />
+        </div>
+      </div>
+    </section>
+    <section class="about" id="about">
+      <h1 class="title">Education</h1>
+
+        <h2 class="Education"></h2>
+        <div class="timeline-items">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+              <div class="timeline-date">2018</div>
+              <div class="timeline-content">
+               <h3>High School</h3>
+               <p>Universidad de Manila. <br>
+                <b>Strand:</b> Information and Communications Technology
+               </p>
+              </div>
+
+          </div>
+        
+        
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+              <div class="timeline-date">2020</div>
+              <div class="timeline-content">
+               <h3>University</h3>
+               <p>Universidad de Manila <br>
+                <b>Course:</b> Bachelor of Science in Computer Engineering
+               </p>
+              </div>
+            
+          </div>
+        
+        
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+              <div class="timeline-date">2024</div>
+              <div class="timeline-content">
+               <h3>Internship</h3>
+               <p>TVCXpress Manila Inc. <br>
+                <b>Position:</b> ICT Assistant Intern / Web Developer Intern <br>
+                <b>Duration:</b> 3 months
+               </p>
+              </div>
+          </div>    
+    </section>
+    <section class="experience" id="experience">
+      <h1 class="title">Skills</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>React</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Node.js</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Tailwind</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Others</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Java</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>MySQL</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Network Configuration</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Troubleshooting </h3>
+                  <p>Advanced</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+    <section id="projects">
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container" onclick="openProjectModal('project1')">
+              <img
+                src="./assets/weather.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Weather App</h2>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container" onclick="openProjectModal('project2')">
+              <img
+                src="./assets/bobcats.jpg"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Bobcats Enterprises Inventory Management System</h2>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container" onclick="openProjectModal('project3')">
+              <img
+                src="./assets/rjnm.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">RJNM Gym Management System</h2>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container" onclick="openProjectModal('project4')">
+              <img
+                src="./assets/SEA.png"
+                alt="Project 4"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">SEA Dishes</h2>
+          </div>
+        </div>
+      </div>
+
+      <div id="project1" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Weather App</h2>
+          <img src="./assets/weather.png" alt="Project 1" class="modal-img">
+          <p>A weather app that provides real-time weather information for any location in the world. It uses the OpenWeatherMap API to fetch weather data and displays it in a user-friendly interface.</p>
+          <div class="modal-details">
+            <h3>Key Features:</h3>
+            <ul>
+              <li>Real-time weather updates</li>
+              <li>Responsive design for all devices</li>
+              <li>Interactive UI/UX</li>
+              <li>Test Demo is only random</li>
+            </ul>
+          </div>
+          <button class="btn btn-color-2 project-btn" onclick="location.href='https://weather-github-52zwokvlp-ruzz0805s-projects.vercel.app/'">
+            Demo
+          </button>
+        </div>
+      </div>
+
+      <div id="project2" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Bobcats Enterprises Inventory Management System</h2>
+          <img src="./assets/bobcats.jpg" alt="Project 2" class="modal-img">
+          <p>A comprehensive inventory management system designed for Bobcats Enterprises to streamline their business operations.</p>
+          <div class="modal-details">
+            <h3>Key Features:</h3>
+            <ul>
+              <li>Real-time inventory tracking</li>
+              <li>Sales and purchase management</li>
+              <li>Reporting and analytics</li>
+            </ul>
+          </div>
+          <button class="btn btn-color-2 project-btn" onclick="location.href='https://drive.google.com/drive/folders/1Kl7okres2JH2rDkuAWwmF_f20zeBVioR?usp=sharing'">
+            Download Setup
+          </button>
+        </div>
+      </div>
+
+      <div id="project3" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>RJNM Gym Management System</h2>
+          <img src="./assets/rjnm.png" alt="Project 3" class="modal-img">
+          <p>A modern gym management system that helps track members, schedules, and equipment maintenance.</p>
+          <div class="modal-details">
+            <h3>Key Features:</h3>
+            <ul>
+              <li>Member management and tracking</li>
+              <li>Schedule and class booking system</li>
+              <li>Equipment maintenance logs</li>
+            </ul>
+          </div>
+          <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Ruzz0805/portfolio'">
+            View on Github
+          </button>
+        </div>
+      </div>
+
+      <div id="project4" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>SEA Dishes</h2>
+          <img src="./assets/SEA.png" alt="Project 4" class="modal-img">
+          <p>A modern and responsive website for SEA Dishes that is about exploring the different dishes of the Southeast Asian region and embracing the diverse cultures with a exciting random dish generator by the use of HTML, CSS, and JavaScript.</p>
+          <div class="modal-details">
+            <h3>Key Features:</h3>
+            <ul>
+              <li>Responsive design for all devices</li>
+              <li>Interactive project modals</li>
+              <li>Random Dish Generator</li>
+              <li>Interactive UI/UX</li>
+            </ul>
+          </div>
+          <button class="btn btn-color-2 project-btn" onclick="location.href='https://sea-dishes-github-io.vercel.app/'">
+            Demo
+          </button>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-wrapper">
+        <div class="contact-left">
+          <h2>Let's Connect</h2>
+          <p class="contact-description">
+            I'm currently available for freelance work or full-time positions. 
+            Feel free to reach out if you have any questions or would like to work together!
+          </p>
+          <div class="contact-info">
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <img src="./assets/email.png" alt="Email icon" class="icon contact-icon"/>
+              </div>
+              <div class="contact-info-content">
+                <h3>Email</h3>
+                <p><a href="mailto:lloydmanoguid@gmail.com">lloydmanoguid@gmail.com</a></p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon"/>
+              </div>
+              <div class="contact-info-content">
+                <h3>LinkedIn</h3>
+                <p><a href="https://www.linkedin.com/in/ruzzelle" target="_blank">linkedin.com/in/ruzzelle</a></p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <img src="./assets/arrow.png" alt="Location icon" class="icon contact-icon"/>
+              </div>
+              <div class="contact-info-content">
+                <h3>Location</h3>
+                <p>Manila, Philippines</p>
+              </div>
+            </div>
+          </div>
+          <div class="contact-socials">
+            <a href="https://github.com/" target="_blank" class="social-icon">
+              <img src="./assets/github.png" alt="Github" />
+            </a>
+            <a href="https://linkedin.com/" target="_blank" class="social-icon">
+              <img src="./assets/linkedin.png" alt="LinkedIn" />
+            </a>
+            <!-- Add more social icons as needed -->
+          </div>
+        </div>
+        <div class="contact-right">
+          <form class="contact-form" id="contact-form" onsubmit="sendEmail(event)">
+            <div class="form-group">
+              <input type="text" id="name" name="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+              <input type="email" id="email" name="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+              <input type="text" id="subject" name="subject" placeholder="Subject" required>
+            </div>
+            <div class="form-group">
+              <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-color-2">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Lloyd Ruzzelle. All Rights Reserved.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+      (function() {
+        emailjs.init("Xfg9UcDPSQAg4pg_J");
+      })();
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>
